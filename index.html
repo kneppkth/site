@@ -13,6 +13,26 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: 'your-app-id',
+					autoLogAppEvents: true,
+					xfbml: true,
+					version: 'v6.0'
+				});
+			};
+		</script>
+		<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148719366-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-148719366-1');
+		</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -23,7 +43,7 @@
 							<h1>Welcome to KNEPP</h1>
 							<p class="major">We're a KTH photo club that loves all new and old methods of creating pictures. We always welcome new members</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<!-- <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -34,10 +54,10 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>We organize meetings with cool photographers</h2>
+							<h2>We organize meetings with photographers</h2>
 							<p>There's tons of super smart photographers in Stockholm with whom we organize talks, workshops and exhibitions. We learn a lot and it's ton's of fun. If you'd like to meet up with our members, let us know!</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="https://www.facebook.com/pg/KneppKTH/events" class="button" target="_blank">See our current events on FB	</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -48,10 +68,10 @@
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>We visit cool exhibitions</h2>
-							<p>In Stockholm we have very cool museums with good pictures. We love going there, getting a private tour with super cool guides and learning tons about what makes a good picture.</p>
+							<h2>We visit photo exhibitions</h2>
+							<p>In Stockholm we have very a couple of great museums with good pictures. We love going there, getting a private tour with super cool guides and learning tons about what makes a good shoot.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="https://www.facebook.com/pg/KneppKTH/events" class="button" target="_blank">See our past current events on FB</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -63,9 +83,9 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>We do photo walks</h2>
-							<p>Nothing beats getting into field and making real pictures of real things. We go together and hunt for decisive moments.</p>
+							<p>We go together and hunt for decisive moments.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="https://www.facebook.com/pg/KneppKTH/photos" class="button" target="_blank">See our photo galleries</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -77,7 +97,10 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>We have our own darkoom</h2>
-							<p>Shooting film is great way to get closer to your camera and technology and there's nothing better than making your own print. We have tons of great equipment and organize courses.</p>
+							<p>Shooting film is great way to get closer to your camera and technology and we love creating our own prints. We have tons of great equipment and organize beginner courses.</p>
+							<ul class="actions stacked">
+								<li><a href="https://guide.knepp.se" target="_blank" class="button">Learn More</a></li>
+							</ul>
 						</div>
 
 						<!-- Gallery -->
@@ -87,11 +110,11 @@
 										<img src="images/gallery/thumbs/01.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Enlarger</h3>
-										<p>We have great enlargers</p>
-										<ul class="actions fixed">
+										<h3>Enlargers</h3>
+										<p>We have great enlargers for B&W and colour prints</p>
+										<!-- <ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
-										</ul>
+										</ul> -->
 									</div>
 								</article>
 								<article>
@@ -99,11 +122,11 @@
 										<img src="images/gallery/thumbs/02.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Chemistry</h3>
-										<p>Our chemistry is the best in the world</p>
-										<ul class="actions fixed">
+										<h3>B&W and C41 film development</h3>
+										<p>We develop our own rolls using D76, Rodinal & C41</p>
+										<!-- <ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
-										</ul>
+										</ul> -->
 									</div>
 								</article>
 								<article>
@@ -112,122 +135,25 @@
 									</a>
 									<div class="caption">
 										<h3>Papers</h3>
-										<p>Nothing can compare to our stock</p>
-										<ul class="actions fixed">
+										<p>We have a broad stock of papers in various sizes on which our members hone their perfect print skills	</p>
+										<!-- <ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
-										</ul>
+										</ul> -->
 									</div>
 								</article>
 								<article>
 									<a href="images/gallery/fulls/04.jpg" class="image">
 										<img src="images/gallery/thumbs/04.jpg" alt="" />
 									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
+										<div class="caption">
+											<h3>Chemistry</h3>
+											<p>We mix our own chemistry to develop B&W, C41 and print papers</p>
+											<!-- <ul class="actions fixed">
+												<li><span class="button small">Details</span></li>
+											</ul> -->
+										</div>
 								</article>
 							</div>
-
 					</section>
 
 				<!-- Six
@@ -304,7 +230,13 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="post" action="#">
+							<p> Drop us a message on facebook or mail if you'd like to join our club and engage in our activities, darkroom sessions and events.	</p>
+							
+							<div class="fb-messengermessageus" messenger_app_id="<APP_ID>" page_id="<PAGE_ID>" color="<white>"
+								size="<standard	">
+							</div>
+
+							<!-- <form method="post" action="#">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -322,7 +254,7 @@
 								<ul class="actions special">
 									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 								</ul>
-							</form>
+							</form> -->
 
 						</div>
 					</section>
@@ -331,13 +263,11 @@
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.facebook.com/KneppKTH/" target="_blank" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<!-- <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li> -->
+								<li><a href="mailto:info@knepp.se" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy; KNEPP. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
 
