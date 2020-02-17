@@ -7,7 +7,7 @@ sections:
 - type: document
   path: index.html
   label: English homepage
-upload_dir: uploads
+upload_dir: images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
