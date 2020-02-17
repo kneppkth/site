@@ -1,12 +1,20 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+@media screen and (max-width: 980px) {
+
+	.lang h3{
+		color: white!important;
+	}
+
+
+}
+
 .lang{
     position:absolute;
     top: 0.5em;
 	left: 1em;
 	z-index:10
-
 }
 
 /* .lang  a{
