@@ -13,9 +13,8 @@ sections:
   path: index.html
   label: English homepage
 - type: document
-  path: index_se.html
+  path: index-se.html
   label: Swedish homepage
-  match: "**/*"
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''
