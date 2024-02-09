@@ -47,13 +47,65 @@
 				},
 				onApprove: function (data, actions) {
 					return actions.order.capture().then(function (details) {
-						alert('Transaction completed, all went well! Drop us a quick message and we will give you access right away :)');
+						alert('Transaction completed, all went well. Please contact us over Slack via knepp.se/slack to get access as soon as possible!');
 					});
 				},
 				onError: function (err) {
-					alert('Transaction wasn not completed, something went wrong. Try again or write us a message and we will figure out a different way to pay');
+					alert('Transaction wasn not completed, something went wrong. Please contact us over Slack via knepp.se/slack to figure out a different way to pay!');
 				}
 			}).render('#paypal-button-container');
+			paypal.Buttons({
+				style: {
+					shape: 'rect',
+					color: 'gold',
+					layout: 'vertical',
+					label: 'paypal',
+
+				},
+				createOrder: function (data, actions) {
+					return actions.order.create({
+						purchase_units: [{
+							amount: {
+								value: '600'
+							}
+						}]
+					});
+				},
+				onApprove: function (data, actions) {
+					return actions.order.capture().then(function (details) {
+						alert('Transaction completed, all went well. Please contact us over Slack via knepp.se/slack to get access as soon as possible!');
+					});
+				},
+				onError: function (err) {
+					alert('Transaction wasn not completed, something went wrong. Please contact us over Slack via knepp.se/slack to figure out a different way to pay!');
+				}
+			}).render('#paypal-button-nonths-container');
+			paypal.Buttons({
+				style: {
+					shape: 'rect',
+					color: 'gold',
+					layout: 'vertical',
+					label: 'paypal',
+
+				},
+				createOrder: function (data, actions) {
+					return actions.order.create({
+						purchase_units: [{
+							amount: {
+								value: '250'
+							}
+						}]
+					});
+				},
+				onApprove: function (data, actions) {
+					return actions.order.capture().then(function (details) {
+						alert('Transaction completed, all went well. Please contact us over Slack via knepp.se/slack to get access as soon as possible!');
+					});
+				},
+				onError: function (err) {
+					alert('Transaction wasn not completed, something went wrong. Please contact us over Slack via knepp.se/slack to figure out a different way to pay!');
+				}
+			}).render('#paypal-button-oneexchange-container');
 		</script>
 		
 
@@ -65,7 +117,15 @@
 						<div class="content">
 							<h1>Pay for KNEPP membership</h1>
 							<!-- <p class="major">We're a KTH photo club that loves all new and old methods of creating pictures. We always welcome new members 🙌</p> -->
+							<ul>
+							<li>If for some reason you don't have PayPal, you can use PlusGiro <a href="/plusgiro" >here</a>.</li>
+							</ul>
+							<h4>THS members</h4>
 							<div id="paypal-button-container"></div>
+							<h4>Non-THS members</h4>
+							<div id="paypal-button-nonths-container"></div>
+							<h4>Single semester exchange students</h4>
+							<div id="paypal-button-oneexchange-container"></div>
 							<ul class="actions stacked">
 								<!-- <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li> -->
 							</ul>
